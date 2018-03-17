@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Automation tool alpha</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div class="form-group">
+        <label for="part-dropdown">Select A Customer:</label>
+        <select class="form-control" id="part-dropdown"> 
+                <option value="" disabled selected>select customer</option>
+                <option>Lockheed</option>
+                <option>Northrop</option>  
+                <option>Boeing</option>  
+                <option>More to add...</option>
+            </select>
+        <p></p>
+        <small style="float:right">
+                <button class="btn btn-success btn-sm">Add Customer </button>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <button class="btn btn-warning btn-sm">Edit Customer</button>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <button class="btn btn-danger btn-sm">Delete Customer</button>
+        </small>
+    </div>
+    <p>&nbsp;</p>
+    <br/>            
+    <div class="form-group">
+        <label>Select part:</label>
+        <input class="form-control" placeholder="Enter part number">
+    </div>
+    <br/>        
+    <div class="form-check">
+        <input checked type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Print files?</label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        <input type="checkbox" class="form-check-input" id="exampleCheck2">
+        <label class="form-check-label" for="exampleCheck2">Convert pages to PDF and save?</label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input checked type="checkbox" class="form-check-input" id="exampleCheck3">
+        <label class="form-check-label" for="exampleCheck3">Save Catia files?</label>
+        <br/>
+        <p></p>                     
+        <input type="checkbox" class="form-check-input" id="exampleCheck4">
+        <label class="form-check-label" for="exampleCheck4">Show data below (Parts list, material ODxWALL, etc..)</label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" class="form-check-input" id="exampleCheck5">
+        <label class="form-check-label" for="exampleCheck5">Check JSF directory for existing proccess codes/finishes</label>
+    </div>
+    <br/>            
+    <button type="submit" class="btn btn-primary btn-block btn-lg">Run Automation</button>
+    <div style="height:100px"></div>
+    
+
+    <!-- Data output -->
+    <div class="form-group">
+        <textarea disabled class="form-control" id="" cols="30" rows="10" placeholder="populate with data if the 'show data below' option is checked..."></textarea>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "automate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^1.8.4",
+    "electron-packager": "^11.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "foo": "node ./index.js",
+    "help": "electron-packager --help",
+    "package-win": "electron-packager . \"Steico Automate\" --overwrite --win --ia32 --icon=./assets/steico_icon.ico --out=release-builds --version-string.CompanyName=JM-Software --version-string.FileDescription=Automation --version-string.ProductName=\"Automation tool for Steico Industries\""
+  }
+}
