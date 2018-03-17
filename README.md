@@ -1,0 +1,1 @@
+WIP - automation tool for a company using Electron/Node.js
