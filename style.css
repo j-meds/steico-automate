@@ -1,9 +1,17 @@
-/* CodePen demo */
 body {
     background: #2a2a2b;
     color: #fff;
     font-family: Arial, Helvetica;
     margin: 80px;
+}
+
+.disable-content {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    opacity: .3;
+    pointer-events: none;
 }
 
 div.form-check {

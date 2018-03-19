@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8">
     <title>Automation tool alpha</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/boostrap/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <!-- <script src="assets\jquery.js"></script> -->
   </head>
   <body>
 
@@ -30,23 +31,28 @@
     <br/>            
     <div class="form-group">
         <label>Select part:</label>
-        <input class="form-control" placeholder="Enter part number">
-    </div>
-    <br/>        
+        <textarea class="form-control" placeholder="Enter part numbers.."></textarea>
+        <p></p>
+        <small style="float:right">
+                <button class="btn btn-sm" id="spreadsheet_btn">Use spreadsheet</button>
+        </small>
+    </div>    
+    <br/> 
+    <br/>     
     <div class="form-check">
         <input checked type="checkbox" class="form-check-input" id="exampleCheck1">
         <label class="form-check-label" for="exampleCheck1">Print files?</label>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
         <input type="checkbox" class="form-check-input" id="exampleCheck2">
         <label class="form-check-label" for="exampleCheck2">Convert pages to PDF and save?</label>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <input checked type="checkbox" class="form-check-input" id="exampleCheck3">
         <label class="form-check-label" for="exampleCheck3">Save Catia files?</label>
         <br/>
         <p></p>                     
         <input type="checkbox" class="form-check-input" id="exampleCheck4">
-        <label class="form-check-label" for="exampleCheck4">Show data below (Parts list, material ODxWALL, etc..)</label>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label class="form-check-label" for="exampleCheck4">Show data below (Parts list, material ODxWALL, Rev, and etc..)</label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <input type="checkbox" class="form-check-input" id="exampleCheck5">
         <label class="form-check-label" for="exampleCheck5">Check JSF directory for existing proccess codes/finishes</label>
     </div>
@@ -57,8 +63,9 @@
 
     <!-- Data output -->
     <div class="form-group">
-        <textarea disabled class="form-control" id="" cols="30" rows="10" placeholder="populate with data if the 'show data below' option is checked..."></textarea>
+        <textarea disabled class="form-control" id="" cols="30" rows="10" placeholder="populate with data if the 'show data below' option is checked..." id="part-data"></textarea>
     </div>
 
   </body>
+
 </html>
